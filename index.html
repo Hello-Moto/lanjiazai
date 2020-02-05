@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>多张图片延迟加载</title>
+    <style>
+        ul,li,p,h2,div,p,body{margin: 0;padding: 0;}
+        ul{list-style: none;}
+        img{display: block;border: none;}
+        .list > li{position: relative;padding: 10px;border-bottom: 1px dashed #ccc;}
+        .list > li > div:nth-child(1){position: absolute;width: 132px;height: 88px;background: url(./images/default.jpg) no-repeat center center;background-size: cover;top: 10px;left: 10px;}
+        .list > li > div:nth-child(1) > img{width: 100%;height: 100%;display: none;opacity: 0;}
+        .list > li > div:nth-child(2){margin-left: 142px;height: 88px;overflow: hidden;}
+        .list > li > div:nth-child(2) > h2{font-size: 14px;color: #000;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+        .list > li > div:nth-child(2) > p{font-size: 12px;padding-top: 5px;color: #333;}
+    </style>
+</head>
+<body>
+    <ul id="list" class="list">
+        <!-- <li>
+            <div><img src="" trueImg="./images/1.jpg" alt=""></div>
+            <div>
+                <h2>上新了！VR电力系列强势来袭，你准备好了吗？</h2>
+                <p>如果说什么季节，能让人对温暖生出极度的渴望那大概就是冬天，此刻，你是不是正在享受着空调带给你的温暖惬意呢？是谁给你这般稳</p>
+            </div>
+        </li> -->
+    </ul>
+    <script type="text/javascript" src="./utils.js"></script>
+    <script type="text/javascript" src="./list.js"></script>
+</body>
+</html>
